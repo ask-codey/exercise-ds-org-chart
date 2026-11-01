@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="OrgChart/OrgChart.csproj" />
+  <Project Path="OrgChart.Tests/OrgChart.Tests.csproj" />
+</Solution>
