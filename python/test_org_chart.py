@@ -46,10 +46,10 @@ def test_deepest_team_of_one_person():
     assert deepest_team(Employee("Ava")) == ["Ava"], "Not yet: a chart of one person has that person as its deepest level."
 
 
-def test_chart_lines_list_everyone_in_pre_order():
+def test_chart_lines_put_each_manager_above_their_team():
     names = [line.strip() for line in chart_lines(bike_company())]
     assert names == ["Ava", "Ben", "Dev", "Emi", "Chloe", "Farah", "Hana", "Jo", "Gus", "Ivy", "Kim"], \
-        "Not yet: each manager comes before their team (pre-order), reports in the order they were added."
+        "Not yet: each manager comes before their team, reports in the order they were added."
 
 
 def test_chart_lines_indent_two_spaces_per_level():

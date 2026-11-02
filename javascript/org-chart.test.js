@@ -47,10 +47,10 @@ test("deepest team of one person", () => {
   assert.deepEqual(deepestTeam(new Employee("Ava")), ["Ava"], "Not yet: a chart of one person has that person as its deepest level.");
 });
 
-test("chart lines list everyone in pre-order", () => {
+test("chart lines put each manager above their team", () => {
   const names = chartLines(bikeCompany()).map((line) => line.trim());
   assert.deepEqual(names, ["Ava", "Ben", "Dev", "Emi", "Chloe", "Farah", "Hana", "Jo", "Gus", "Ivy", "Kim"],
-    "Not yet: each manager comes before their team (pre-order), reports in the order they were added.");
+    "Not yet: each manager comes before their team, reports in the order they were added.");
 });
 
 test("chart lines indent two spaces per level", () => {

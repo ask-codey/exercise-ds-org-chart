@@ -57,10 +57,10 @@ class ChartTest {
     }
 
     @Test
-    void chartLinesListEveryoneInPreOrder() {
+    void chartLinesPutEachManagerAboveTheirTeam() {
         List<String> names = Chart.chartLines(bikeCompany()).stream().map(String::trim).toList();
         assertEquals(List.of("Ava", "Ben", "Dev", "Emi", "Chloe", "Farah", "Hana", "Jo", "Gus", "Ivy", "Kim"), names,
-            "Not yet: each manager comes before their team (pre-order), reports in the order they were added.");
+            "Not yet: each manager comes before their team, reports in the order they were added.");
     }
 
     @Test

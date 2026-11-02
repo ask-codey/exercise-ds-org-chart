@@ -63,11 +63,11 @@ public class ChartTests
     }
 
     [TestMethod]
-    public void ChartLinesListEveryoneInPreOrder()
+    public void ChartLinesPutEachManagerAboveTheirTeam()
     {
         List<string> names = Chart.ChartLines(BikeCompany()).Select(line => line.Trim()).ToList();
         CollectionAssert.AreEqual(new List<string> { "Ava", "Ben", "Dev", "Emi", "Chloe", "Farah", "Hana", "Jo", "Gus", "Ivy", "Kim" }, names,
-            "Not yet: each manager comes before their team (pre-order), reports in the order they were added.");
+            "Not yet: each manager comes before their team, reports in the order they were added.");
     }
 
     [TestMethod]

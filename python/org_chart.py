@@ -45,7 +45,7 @@ def deepest_team(root):
 def chart_lines(root):
     """
     Print the chart indented: one line per person, each manager
-    before their team (pre-order), reports in the order they were
+    before their team, reports in the order they were
     added, with two spaces in front of a name for every step down
     from the root.
 
